@@ -1,0 +1,40 @@
+/*Чем мы занимаемся*/
+.about-us {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  padding-top: 0px;
+}
+
+.about-us__title {
+  margin-bottom: 50px;
+}
+
+.solutions {
+  display: flex;
+}
+
+.solutions__item {
+  position: relative;
+  margin-right: 30px;
+}
+
+.solutions__item:last-child {
+  margin-right: 0;
+}
+
+.solutions__subtitle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  text-align: center;
+
+  color: $title-white-accent;
+
+  background-color: $subtitle-bcg;
+}

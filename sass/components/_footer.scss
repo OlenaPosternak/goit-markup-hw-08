@@ -1,0 +1,179 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $second-bcg-color;
+}
+
+.footer__info {
+    display: flex;
+    align-items: baseline
+}
+
+
+.footer__logo {
+    color: $icon-secon-color;
+    margin-bottom: 20px;
+}
+
+.address__street {
+    margin-bottom: 9px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    
+    color: $title-white-accent;
+}
+
+.address__contact {
+    display: block;
+    margin-bottom: 9px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: $footer-contact-color;
+
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.address__contact:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.follow-us {
+    margin-left: 70px;
+}
+
+.follow-us__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.follow-us__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $title-white-accent;
+}
+
+.follow-us__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $footer-icon-bcg-color;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+
+}
+
+.follow-us__item {
+    margin-right: 10px;
+}
+
+.follow-us__item:last-child {
+    margin-right: 0;
+}
+
+.follow-us__icon {
+    fill: $icon-secon-color;
+}
+
+
+
+/* Подпишитесь на нас */
+.subscribe {
+    margin-left: auto;
+}
+
+.subscribe__form {
+    display: flex;
+}
+
+.subscribe__input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+
+    background-color: $second-bcg-color;
+    border: $subscribe-border;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    cursor: pointer;
+    caret-color: $subscribe-placeholder-col;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus-within {
+        outline: none;
+        border-color: $accent-color;
+    }
+
+    &:not(:placeholder-shown) {
+        line-height: 1.25;
+        color: $subscribe-placeholder-col;
+    
+    }
+
+}
+
+.subscribe__input::placeholder {
+    line-height: 1.25;
+    color: $subscribe-placeholder-col;
+
+}
+
+
+
+
+
+.subscribe__subtitle {
+    margin-bottom: 20px;
+
+    color: $title-white-accent;
+}
+
+.subscribe__button {
+
+    margin-left: 12px;
+
+
+}
+
+.subscribe__button-icon {
+    display: flex;
+    align-items: center;
+    padding-right: 29px;
+    padding-left: 29px;
+}
+
+.subscribe__icon {
+    fill: currentColor;
+    margin-left: 10px;
+}
