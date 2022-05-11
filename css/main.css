@@ -275,7 +275,6 @@ a {
 }
 
 .projects__item {
-  outline: 1px solid red;
   border: 1px solid #EEEEEE;
   border-top: none;
   margin-bottom: 30px;
