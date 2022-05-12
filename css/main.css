@@ -443,6 +443,12 @@ a {
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    margin-bottom: 60px;
+  }
+}
+
 .footer__section {
   margin-bottom: 60px;
   text-align: center;
@@ -454,6 +460,10 @@ a {
   }
 }
 
+.footer__info {
+  margin-bottom: -60px;
+}
+
 @media screen and (min-width: 1200px) {
   .footer__info {
     display: -webkit-box;
@@ -462,6 +472,7 @@ a {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    margin-bottom: 0px;
   }
 }
 
@@ -564,7 +575,6 @@ a {
 /* Подпишитесь на нас */
 .subscribe {
   margin-left: auto;
-  margin-bottom: -60px;
 }
 
 .subscribe__form {

@@ -4,6 +4,11 @@
   background-color: $second-bcg-color;
 }
 
+.footer__container {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 60px;
+  }
+}
 .footer__section {
   margin-bottom: 60px;
   text-align: center;
@@ -14,9 +19,11 @@
 }
 
 .footer__info {
+  margin-bottom: -60px;
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+    margin-bottom: 0px;
   }
 }
 
@@ -114,8 +121,6 @@
 /* Подпишитесь на нас */
 .subscribe {
   margin-left: auto;
-
-  margin-bottom: -60px;
 }
 
 .subscribe__form {
