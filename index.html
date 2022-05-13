@@ -185,14 +185,16 @@
                 <h2 class="about-us__title title">Чем мы занимаемся</h2>
                 <ul class="solutions">
                     <li class="solutions__item">
-                        <img src="./images/box1.jpg" alt="человек печатает код" width="370">
+                        <img srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x" src="./images/box1.jpg"
+                            alt="человек печатает код" width="370">
                         <div class="solutions__subtitle subtitle">
                             Десктопные приложения
                         </div>
                     </li>
 
                     <li class="solutions__item">
-                        <img src="./images/box2.jpg" alt="отображение макета на мобильном устройстве" width="370">
+                        <img srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x" src="./images/box2.jpg"
+                            alt="отображение макета на мобильном устройстве" width="370">
                         <div class="solutions__subtitle subtitle">
                             Мобильные приложения
                         </div>
@@ -200,7 +202,8 @@
                     </li>
 
                     <li class="solutions__item">
-                        <img src="./images/box3.jpg" alt="разработка дизайна" width="370">
+                        <img srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x" src="./images/box3.jpg"
+                            alt="разработка дизайна" width="370">
                         <div class="solutions__subtitle subtitle">
                             Дизайнерские решения
                         </div>
@@ -219,7 +222,19 @@
                 <h2 class="title team__title">Наша команда</h2>
                 <ul class="team-meambers">
                     <li class="team-meambers__person">
-                        <img src="./images/demyanenko.jpg" alt="Игорь Демьяненко" width="270px">
+
+                        <picture>
+                            <source media="(max-width:767px)"
+                                srcset="./images/demyanenko/demyanenko-450w.jpg 1x, ./images/demyanenko/demyanenko-450w@2x.jpg 2x">
+                            <source media="(max-width:1199px)"
+                                srcset="./images/demyanenko/demyanenko-354w.jpg 1x, ./images/demyanenko/demyanenko-354w@2x.jpg 2x">
+                            <source media="(min-width:1200px)"
+                                srcset="./images/demyanenko/demyanenko-270w.jpg 1x, ./images/demyanenko/demyanenko-270w@2x.jpg 2x">
+                            <img src="./images/demyanenko/demyanenko-450w.jpg" alt="Игорь Демьяненко">
+                        </picture>
+
+                        <img src="./" alt="">
+
                         <div class="team-meambers__thumb">
                             <h3 class="team-meambers__title">Игорь Демьяненко</h3>
                             <p class="team-meambers__position">Product Designer</p>
@@ -261,7 +276,18 @@
 
                     </li>
                     <li class="team-meambers__person">
-                        <img src="./images/repina.jpg" alt="Ольга Репина" width="270">
+
+                        <picture>
+                            <source media="(max-width:767px)"
+                                srcset="./images/repina/repina-450w.jpg 1x, ./images/repina/repina-450w@2x.jpg 2x">
+                            <source media="(max-width:1199px)"
+                                srcset="./images/repina/repina-354w.jpg 1x, ./images/repina/repina-354w@2x.jpg 2x">
+                            <source media="(min-width:1200px)"
+                                srcset="./images/repina/repina-270w.jpg 1x, ./images/repina/repina-270w@2x.jpg 2x">
+                            <img src="./images/repina/repina-270w.jpg" alt="Ольга Репина">
+                        </picture>
+
+
                         <div class="team-meambers__thumb">
                             <h3 class="team-meambers__title">Ольга Репина</h3>
                             <p class="team-meambers__position">Frontend Developer</p>
@@ -304,7 +330,16 @@
                     </li>
 
                     <li class="team-meambers__person">
-                        <img src="./images/tarasov.jpg" alt="Николай Тарасов" width="270">
+                        <picture>
+                            <source media="(max-width:767px)"
+                                srcset="./images/tarasov/tarasov-450w.jpg 1x, ./images/tarasov/tarasov-450w@2x.jpg 2x">
+                            <source media="(max-width:1199px)"
+                                srcset="./images/tarasov/tarasov-354w.jpg 1x, ./images/tarasov/tarasov-354w@2x.jpg 2x">
+                            <source media="(min-width:1200px)"
+                                srcset="./images/tarasov/tarasov-270w.jpg 1x, ./images/tarasov/tarasov-270w@2x.jpg 2x">
+                            <img src="./images/tarasov/tarasov-270w.jpg" alt="Николай Тарасов">
+                        </picture>
+
                         <div class="team-meambers__thumb">
                             <h3 class="team-meambers__title">Николай Тарасов</h3>
                             <p class="team-meambers__position">Marketing</p>
@@ -347,7 +382,17 @@
                     </li>
 
                     <li class="team-meambers__person">
-                        <img src="./images/ermakov.jpg" alt="Михаил Ермаков" width="270">
+                        <picture>
+                            <source media="(max-width:767px)"
+                                srcset="./images/ermakov/ermakov-450w.jpg 1x, ./images/ermakov/ermakov-450w@2x.jpg 2x">
+                            <source media="(max-width:1199px)"
+                                srcset="./images/ermakov/ermakov-354w.jpg 1x, ./images/ermakov/ermakov-354w@2x.jpg 2x">
+                            <source media="(min-width:1200px)"
+                                srcset="./images/ermakov/ermakov-270w.jpg 1x, ./images//ermakov/ermakov-270w@2x.jpg 2x">
+                            <<img src="./images/ermakov/ermakov-270w.jpg.jpg" alt="Михаил Ермаков">
+                        </picture>
+
+
                         <div class="team-meambers__thumb">
                             <h3 class="team-meambers__title">Михаил Ермаков</h3>
                             <p class="team-meambers__position">UI Designer</p>
