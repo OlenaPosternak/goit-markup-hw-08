@@ -1,4 +1,13 @@
 .hero {
+  margin: 0 auto;
+
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
   background-color: $second-bcg-color;
   background-image: linear-gradient($hero-gradient), url(../images/hero/hero-480w.jpg);
   background-size: cover;
@@ -12,42 +21,28 @@
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient($hero-gradient), url(../images/hero/hero-768w.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient($hero-gradient), url(../images/hero/hero-768w@2x.jpg);
+    }
   }
-
-  @media (min-width: 768px),
-    (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient($hero-gradient), url(../images/hero/hero-768w@2x.jpg);
-  }
-
-  @media screen and (min-width: 1200px) {
-    background-image: linear-gradient($hero-gradient), url(../images/hero/hero-1600w.jpg);
-  }
-
-  //   @media (min-width: 1200px),
-  //     (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: linear-gradient($hero-gradient), url(../images/hero/hero-1600w@2x.jpg);
-  //   }
-
-  margin: 0 auto;
-
-  text-align: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
-
-  background-repeat: no-repeat;
-  background-position: center;
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
+    background-image: linear-gradient($hero-gradient), url(../images/hero/hero-1600w.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient($hero-gradient), url(../images/hero/hero-1600w@2x.jpg);
+    }
   }
 }
 
