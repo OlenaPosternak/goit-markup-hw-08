@@ -1,58 +1,71 @@
 .header {
-    border-bottom: 1px solid $header-border-col;
-
+  border-bottom: 1px solid $header-border-col;
 }
 
 .header__section {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    justify-content: space-between;
-    min-height: 80px;
-
+  justify-content: space-between;
+  min-height: 80px;
 }
 
 .header__logo {
-    margin-right: 93px;
+  margin-right: 93px;
 }
 
 .header__contacts-section {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header__contact {
-    display: inline-flex;
-    align-items: center;
+  display: none;
+  align-items: center;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $main-color;
-    text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $main-color;
+  text-decoration: none;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    padding-bottom: 32px;
-    padding-top: 32px;
-    margin-right: 50px;
-    
-    &:hover,
-    &:focus {
+  padding-bottom: 32px;
+  padding-top: 32px;
+  margin-right: 50px;
+
+  &:hover,
+  &:focus {
     color: $accent-color;
-}
-
+  }
 }
 
 .header__contact:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 .header__icon {
-    display: inline-block;
-    margin-right: 10px;
-    fill: currentColor;
+  display: inline-block;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
+.header__open-btn {
+  display: flex;
+  align-items: center;
+  display: block;
+  background-color: $main-bcg-color;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
 
+.header__open-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .header__open-btn:hover &,
+  .header__open-btn:focus & {
+    fill: $accent-color;
+  }
+}
