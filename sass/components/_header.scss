@@ -31,13 +31,12 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-
     &:not(:last-child) {
       margin-bottom: 10px;
     }
 
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: $main-color;
@@ -55,6 +54,7 @@
     padding-bottom: 32px;
     padding-top: 32px;
     margin-right: 50px;
+    font-size: 14px;
 
     &:not(:last-child) {
       margin-bottom: 0;
